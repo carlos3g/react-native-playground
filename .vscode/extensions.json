@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "hediet.vscode-drawio",
+    "ms-azuretools.vscode-docker",
+    "EditorConfig.EditorConfig",
+    "ms-vscode.vscode-typescript-next",
+    "Orta.vscode-jest",
+    "YoavBls.pretty-ts-errors",
+    "usernamehw.errorlens"
+  ]
+}

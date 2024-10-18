@@ -1,0 +1,30 @@
+{
+  "hediet.vscode-drawio.colorNames": {},
+  "hediet.vscode-drawio.customFonts": ["Fira Code"],
+  "hediet.vscode-drawio.customLibraries": [
+    {
+      "entryId": "aws4",
+      "libName": "aws4",
+      "url": "https://github.com/jgraph/drawio/blob/dev/src/main/webapp/stencils/aws4.xml"
+    }
+  ],
+  "hediet.vscode-drawio.defaultEdgeStyle": {
+    "fillColor": "#d5e8d4",
+    "strokeColor": "#82b366"
+  },
+  "hediet.vscode-drawio.defaultVertexStyle": {
+    "fillColor": "#d5e8d4",
+    "strokeColor": "#82b366"
+  },
+  "hediet.vscode-drawio.resizeImages": null,
+  "hediet.vscode-drawio.theme": "atlas",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always",
+    "source.fixAll.eslint": "always",
+    "source.fixAll.ts": "always",
+    "source.removeUnused.ts": "always",
+    "source.removeUnusedImports": "always",
+    "source.organizeImports": "always"
+  }
+}
