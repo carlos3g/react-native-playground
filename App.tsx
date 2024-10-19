@@ -30,6 +30,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Toaster } from 'sonner-native';
 import { RootNavigator } from '@/navigation';
 import { queryClient } from '@/lib/react-query';
+import { StatusBar } from 'expo-status-bar';
 
 void SplashScreen.preventAutoHideAsync();
 
@@ -69,6 +70,7 @@ const App = gestureHandlerRootHOC(() => {
     <QueryClientProvider client={queryClient}>
       <SafeAreaProvider>
         <Host>
+          <StatusBar style="dark" translucent={false} />
           <RootNavigator />
         </Host>
         <Toaster />
