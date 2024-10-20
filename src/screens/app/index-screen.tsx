@@ -27,6 +27,10 @@ const screens: ScreenData[] = [
     label: 'Chasing Bubbles',
     value: 'ChasingBubblesScreen',
   },
+  {
+    label: 'Animated 3D Card',
+    value: 'Animated3DCard',
+  },
 ];
 
 interface IndexScreenProps extends AppStackScreenProps<'IndexScreen'> {}

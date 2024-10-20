@@ -11,6 +11,7 @@ export type AppStackParams = {
   RainbowSpinnerScreen: undefined;
   GradientClock: undefined;
   ChasingBubblesScreen: undefined;
+  Animated3DCard: undefined;
 };
 
 // Helpers
