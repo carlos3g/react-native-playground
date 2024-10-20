@@ -10,6 +10,7 @@ export type AppStackParams = {
   BlurCardsScreen: undefined;
   RainbowSpinnerScreen: undefined;
   GradientClock: undefined;
+  ChasingBubblesScreen: undefined;
 };
 
 // Helpers

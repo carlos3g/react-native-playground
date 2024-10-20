@@ -22,7 +22,7 @@ export const BlurCardsScreen: React.FC<BlurCardsScreenProps> = () => {
     >
       <StatusBar style="light" />
 
-      <Canvas style={styles.canvasStyle}>
+      <Canvas style={styles.canvas}>
         <GradientBackground />
         <Cards progress={progress} />
       </Canvas>
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  canvasStyle: {
+  canvas: {
     flex: 1,
     width: '100%',
     height: '100%',

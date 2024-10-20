@@ -24,7 +24,7 @@ export const GradientClock: React.FC<GradientClockProps> = () => {
     <View style={styles.container}>
       <StatusBar style="light" />
 
-      <Canvas style={styles.canvasStyle}>
+      <Canvas style={styles.canvas}>
         <Rect x={0} y={0} width={WindowWidth} height={WindowHeight} color="blue">
           <SweepGradient
             origin={vec(WindowWidth / 2, WindowHeight / 2)}
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'black',
   },
-  canvasStyle: {
+  canvas: {
     flex: 1,
     width: '100%',
     height: '100%',

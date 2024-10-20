@@ -1,5 +1,6 @@
 import { useNavigation } from '@react-navigation/native';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import type { AppStackNavigationProp, AppStackParams, AppStackScreenProps } from '@/navigation/app.navigator.types';
 import { Button } from '@/shared/components/ui/button';
 import { lightTheme } from '@/shared/theme/theme';
@@ -22,6 +23,10 @@ const screens: ScreenData[] = [
     label: 'Gradient Clock',
     value: 'GradientClock',
   },
+  {
+    label: 'Chasing Bubbles',
+    value: 'ChasingBubblesScreen',
+  },
 ];
 
 interface IndexScreenProps extends AppStackScreenProps<'IndexScreen'> {}
@@ -30,11 +35,11 @@ export const IndexScreen: React.FC<IndexScreenProps> = () => {
   const { navigate } = useNavigation<AppStackNavigationProp<'IndexScreen'>>();
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       {screens.map(({ label, value }) => (
         <Button key={value} onPress={() => navigate(value)} title={label} />
       ))}
-    </View>
+    </SafeAreaView>
   );
 };
 

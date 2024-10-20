@@ -70,7 +70,7 @@ const App = gestureHandlerRootHOC(() => {
     <QueryClientProvider client={queryClient}>
       <SafeAreaProvider>
         <Host>
-          <StatusBar style="dark" translucent={false} />
+          <StatusBar style="dark" />
           <RootNavigator />
         </Host>
         <Toaster />
