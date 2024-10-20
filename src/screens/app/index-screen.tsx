@@ -18,6 +18,10 @@ const screens: ScreenData[] = [
     label: 'Rainbow Spinner',
     value: 'RainbowSpinnerScreen',
   },
+  {
+    label: 'Gradient Clock',
+    value: 'GradientClock',
+  },
 ];
 
 interface IndexScreenProps extends AppStackScreenProps<'IndexScreen'> {}

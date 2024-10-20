@@ -4,6 +4,7 @@ import type { AppStackParams } from '@/navigation/app.navigator.types';
 import { IndexScreen } from '@/screens/app/index-screen';
 import { BlurCardsScreen } from '@/screens/animations/blur-cards';
 import { RainbowSpinnerScreen } from '@/screens/animations/rainbow-spinner';
+import { GradientClock } from '@/screens/animations/gradient-clock';
 
 const { Navigator, Screen } = createNativeStackNavigator<AppStackParams>();
 
@@ -15,6 +16,7 @@ const AppNavigator: React.FC = () => (
 
     <Screen component={BlurCardsScreen} name="BlurCardsScreen" />
     <Screen component={RainbowSpinnerScreen} name="RainbowSpinnerScreen" />
+    <Screen component={GradientClock} name="GradientClock" />
   </Navigator>
 );
 
