@@ -28,9 +28,9 @@ import { useEffect } from 'react';
 import { Host } from 'react-native-portalize';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Toaster } from 'sonner-native';
+import { StatusBar } from 'expo-status-bar';
 import { RootNavigator } from '@/navigation';
 import { queryClient } from '@/lib/react-query';
-import { StatusBar } from 'expo-status-bar';
 
 void SplashScreen.preventAutoHideAsync();
 

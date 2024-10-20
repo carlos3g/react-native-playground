@@ -1,7 +1,24 @@
 import { useNavigation } from '@react-navigation/native';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import type { AppStackNavigationProp, AppStackScreenProps } from '@/navigation/app.navigator.types';
+import { StyleSheet, View } from 'react-native';
+import type { AppStackNavigationProp, AppStackParams, AppStackScreenProps } from '@/navigation/app.navigator.types';
+import { Button } from '@/shared/components/ui/button';
 import { lightTheme } from '@/shared/theme/theme';
+
+type ScreenData = {
+  label: string;
+  value: keyof AppStackParams;
+};
+
+const screens: ScreenData[] = [
+  {
+    label: 'Blur Cards',
+    value: 'BlurCardsScreen',
+  },
+  {
+    label: 'Rainbow Spinner',
+    value: 'RainbowSpinnerScreen',
+  },
+];
 
 interface IndexScreenProps extends AppStackScreenProps<'IndexScreen'> {}
 
@@ -10,9 +27,9 @@ export const IndexScreen: React.FC<IndexScreenProps> = () => {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.button} onPress={() => navigate('BlurCardsScreen')}>
-        <Text style={styles.buttonText}>Blur Cards</Text>
-      </TouchableOpacity>
+      {screens.map(({ label, value }) => (
+        <Button key={value} onPress={() => navigate(value)} title={label} />
+      ))}
     </View>
   );
 };
@@ -20,19 +37,9 @@ export const IndexScreen: React.FC<IndexScreenProps> = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    gap: 16,
+    gap: 8,
+    paddingTop: 16,
     backgroundColor: lightTheme.colors.background,
     paddingHorizontal: 16,
-  },
-  button: {
-    backgroundColor: lightTheme.colors.buttonPrimary,
-    padding: 16,
-    borderRadius: 16,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  buttonText: {
-    color: lightTheme.colors.primaryContrast,
-    textAlign: 'center',
   },
 });

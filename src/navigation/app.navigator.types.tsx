@@ -8,6 +8,7 @@ export type AppStackParams = {
 
   // animations
   BlurCardsScreen: undefined;
+  RainbowSpinnerScreen: undefined;
 };
 
 // Helpers
