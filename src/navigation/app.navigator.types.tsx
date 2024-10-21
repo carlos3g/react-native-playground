@@ -12,6 +12,7 @@ export type AppStackParams = {
   GradientClock: undefined;
   ChasingBubblesScreen: undefined;
   Animated3DCard: undefined;
+  ControlledBall: undefined;
 };
 
 // Helpers
