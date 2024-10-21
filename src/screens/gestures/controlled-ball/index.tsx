@@ -1,6 +1,8 @@
+// old version: https://github.com/carlos3g/animations-showcase/commit/c00207e6fd80589627893cb9ab30350f669b313f
+
 import { Dimensions, StyleSheet, View } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
-import Animated, { useAnimatedStyle, useSharedValue } from 'react-native-reanimated';
+import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
 import { lightTheme } from '@/shared/theme/theme';
 
 const { width: WindowWidth } = Dimensions.get('screen');
@@ -11,27 +13,28 @@ interface ControlledBallProps {}
 
 export const ControlledBall: React.FC<ControlledBallProps> = () => {
   const offset = useSharedValue({ x: 0, y: 0 });
-  const offsetCtx = useSharedValue({ x: 0, y: 0 });
   const scale = useSharedValue(1);
-  const scaleCtx = useSharedValue(1);
 
   const panGesture = Gesture.Pan()
     .onChange(({ translationX, translationY }) => {
       offset.value = {
-        x: offsetCtx.value.x + translationX,
-        y: offsetCtx.value.y + translationY,
+        x: translationX,
+        y: translationY,
       };
     })
     .onEnd(() => {
-      offsetCtx.value = offset.value;
+      offset.value = {
+        x: withSpring(0),
+        y: withSpring(0),
+      };
     });
 
   const pinchGesture = Gesture.Pinch()
     .onChange((e) => {
-      scale.value = scaleCtx.value * e.scale;
+      scale.value = e.scale;
     })
     .onEnd(() => {
-      scaleCtx.value = scale.value;
+      scale.value = withSpring(1);
     });
 
   const animatedStyle = useAnimatedStyle(() => ({

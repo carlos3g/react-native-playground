@@ -13,6 +13,7 @@ export type AppStackParams = {
   ChasingBubblesScreen: undefined;
   Animated3DCard: undefined;
   ControlledBall: undefined;
+  ExpandableCard: undefined;
 };
 
 // Helpers

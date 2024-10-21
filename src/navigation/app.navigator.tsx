@@ -8,6 +8,7 @@ import { GradientClock } from '@/screens/animations/gradient-clock';
 import { ChasingBubblesScreen } from '@/screens/animations/chasing-bubbles';
 import { Animated3DCard } from '@/screens/animations/animated-3d-card';
 import { ControlledBall } from '@/screens/gestures/controlled-ball';
+import { ExpandableCard } from '@/screens/gestures/expandable-card';
 
 const { Navigator, Screen } = createNativeStackNavigator<AppStackParams>();
 
@@ -24,6 +25,7 @@ const AppNavigator: React.FC = () => (
     <Screen component={Animated3DCard} name="Animated3DCard" />
 
     <Screen component={ControlledBall} name="ControlledBall" />
+    <Screen component={ExpandableCard} name="ExpandableCard" />
   </Navigator>
 );
 

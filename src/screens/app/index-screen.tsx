@@ -35,6 +35,10 @@ const screens: ScreenData[] = [
     label: 'Controlled Ball',
     value: 'ControlledBall',
   },
+  {
+    label: 'Expandable Card',
+    value: 'ExpandableCard',
+  },
 ];
 
 interface IndexScreenProps extends AppStackScreenProps<'IndexScreen'> {}
