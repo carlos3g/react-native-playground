@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Animations Showcase",
-    "slug": "animations-showcase",
+    "name": "carlos3g playground",
+    "slug": "react-native-playground",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,18 +13,23 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.carlos3g.animationsshowcase"
+      "bundleIdentifier": "com.carlos3g.rn-playground"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.carlos3g.animationsshowcase"
+      "package": "com.carlos3g.rnplayground"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": ["expo-font"]
+    "plugins": ["expo-font", "react-native-edge-to-edge"],
+    "extra": {
+      "eas": {
+        "projectId": "83f46f3b-468b-4a14-8b3d-23183ff9768f"
+      }
+    }
   }
 }

@@ -7160,6 +7160,11 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
+react-native-edge-to-edge@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/react-native-edge-to-edge/-/react-native-edge-to-edge-0.2.1.tgz#68fca5c878698efaff2e7ecc16c3ff9e05818d99"
+  integrity sha512-SbsknzVSP/ybxw4WAfaMqEO5FZpIn3lCPs1Hh+Ovh/RdvVDm1prCacYvryVOcNSwwG1iANmOSzjKkN2RORvKsQ==
+
 react-native-gesture-handler@~2.16.2:
   version "2.16.2"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-2.16.2.tgz#032bd2a07334292d7f6cff1dc9d1ec928f72e26d"

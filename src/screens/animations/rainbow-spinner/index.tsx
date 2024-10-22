@@ -1,5 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
+import { SystemBars } from 'react-native-edge-to-edge';
 import { Spinner } from '@/screens/animations/rainbow-spinner/spinner';
 
 interface RainbowSpinnerScreenProps {}
@@ -7,7 +7,7 @@ interface RainbowSpinnerScreenProps {}
 export const RainbowSpinnerScreen: React.FC<RainbowSpinnerScreenProps> = () => {
   return (
     <View style={styles.container}>
-      <StatusBar style="light" />
+      <SystemBars style="light" />
       <Spinner />
     </View>
   );

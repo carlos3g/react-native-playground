@@ -1,5 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import { Dimensions, StyleSheet, View } from 'react-native';
+import { SystemBars } from 'react-native-edge-to-edge';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, {
   Extrapolation,
@@ -60,7 +60,7 @@ export const Animated3DCard: React.FC<Animated3DCardProps> = () => {
 
   return (
     <View style={styles.container}>
-      <StatusBar style="light" />
+      <SystemBars style="light" />
 
       <BackgroundGradient width={GRADIENT_WIDTH} height={GRADIENT_HEIGHT} />
 

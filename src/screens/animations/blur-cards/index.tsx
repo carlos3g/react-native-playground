@@ -1,6 +1,6 @@
 import { Canvas } from '@shopify/react-native-skia';
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
+import { SystemBars } from 'react-native-edge-to-edge';
 import { useSharedValue, withTiming } from 'react-native-reanimated';
 import { GradientBackground } from '@/screens/animations/blur-cards/gradient-background';
 import { Cards } from '@/screens/animations/blur-cards/cards';
@@ -20,7 +20,7 @@ export const BlurCardsScreen: React.FC<BlurCardsScreenProps> = () => {
         progress.value = withTiming(0, { duration: 1000 });
       }}
     >
-      <StatusBar style="light" />
+      <SystemBars style="light" />
 
       <Canvas style={styles.canvas}>
         <GradientBackground />

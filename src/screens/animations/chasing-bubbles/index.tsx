@@ -1,5 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet } from 'react-native';
+import { SystemBars } from 'react-native-edge-to-edge';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import { useSharedValue } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -32,7 +32,7 @@ export const ChasingBubblesScreen: React.FC<ChasingBubblesScreenProps> = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar style="dark" />
+      <SystemBars style="dark" />
 
       <GestureDetector gesture={gesture}>
         <DotsGrid fingerX={fingerX} fingerY={fingerY} />

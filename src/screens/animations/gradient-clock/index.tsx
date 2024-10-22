@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { Dimensions, StyleSheet, View } from 'react-native';
 import { Easing, useDerivedValue, useSharedValue, withRepeat, withTiming } from 'react-native-reanimated';
 
-const { width: WindowWidth, height: WindowHeight } = Dimensions.get('window');
+const { width: WindowWidth, height: WindowHeight } = Dimensions.get('screen');
 
 interface GradientClockProps {}
 
@@ -25,7 +25,7 @@ export const GradientClock: React.FC<GradientClockProps> = () => {
       <StatusBar style="light" />
 
       <Canvas style={styles.canvas}>
-        <Rect x={0} y={0} width={WindowWidth} height={WindowHeight} color="blue">
+        <Rect x={0} y={0} width={WindowWidth} height={WindowHeight}>
           <SweepGradient
             origin={vec(WindowWidth / 2, WindowHeight / 2)}
             c={vec(WindowWidth / 2, WindowHeight / 2)}
