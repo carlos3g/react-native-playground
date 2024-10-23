@@ -16,6 +16,7 @@ export type AppStackParams = {
   ExpandableCard: undefined;
   Counter: undefined;
   AnimatedSensor: undefined;
+  Neurons: undefined;
 };
 
 // Helpers

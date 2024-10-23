@@ -33,3 +33,5 @@ export const Dot: React.FC<DotProps> = memo((props) => {
 
   return <Circle cx={currentColumn} cy={currentRow} r={radius} color="black" />;
 });
+
+// TO-DO: pinch to increase distance

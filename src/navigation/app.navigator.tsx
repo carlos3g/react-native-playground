@@ -10,6 +10,8 @@ import { RainbowSpinnerScreen } from '@/screens/animations/rainbow-spinner';
 import { IndexScreen } from '@/screens/app/index-screen';
 import { ControlledBall } from '@/screens/gestures/controlled-ball';
 import { AnimatedSensor } from '@/screens/animations/animated-sensor';
+import { ExpandableCard } from '@/screens/gestures/expandable-card';
+import { Neurons } from '@/screens/shaders/neurons';
 
 const { Navigator, Screen } = createNativeStackNavigator<AppStackParams>();
 
@@ -26,8 +28,11 @@ const AppNavigator: React.FC = () => (
     <Screen component={Animated3DCard} name="Animated3DCard" />
 
     <Screen component={ControlledBall} name="ControlledBall" />
+    <Screen component={ExpandableCard} name="ExpandableCard" />
     <Screen component={Counter} name="Counter" />
     <Screen component={AnimatedSensor} name="AnimatedSensor" />
+
+    <Screen component={Neurons} name="Neurons" />
   </Navigator>
 );
 

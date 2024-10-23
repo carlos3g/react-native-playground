@@ -1,8 +1,7 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { SystemBars } from 'react-native-edge-to-edge';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import { useSharedValue } from 'react-native-reanimated';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import { lightTheme } from '@/shared/theme/theme';
 import { DotsGrid } from '@/screens/animations/chasing-bubbles/dots-grid';
 
@@ -31,13 +30,13 @@ export const ChasingBubblesScreen: React.FC<ChasingBubblesScreenProps> = () => {
     });
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <SystemBars style="dark" />
 
       <GestureDetector gesture={gesture}>
         <DotsGrid fingerX={fingerX} fingerY={fingerY} />
       </GestureDetector>
-    </SafeAreaView>
+    </View>
   );
 };
 

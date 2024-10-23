@@ -1,7 +1,7 @@
 import { Dimensions, StyleSheet, View } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
-import { toTheNearest } from '@/shared/utils';
+import { snap } from '@/shared/utils';
 import { lightTheme } from '@/shared/theme/theme';
 
 const { width: WindowWidth } = Dimensions.get('window');
@@ -21,7 +21,7 @@ export const ExpandableCard: React.FC<ExpandableCardProps> = () => {
       scale.value = scaleCtx.value * e.scale;
     })
     .onEnd(() => {
-      const nearestScale = toTheNearest(scale.value, 1, CARD_MAX_HEIGHT / CARD_MIN_HEIGHT);
+      const nearestScale = snap(scale.value, 1, CARD_MAX_HEIGHT / CARD_MIN_HEIGHT);
       scale.value = withSpring(nearestScale);
       scaleCtx.value = nearestScale;
     });

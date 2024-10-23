@@ -59,7 +59,17 @@ export const sections: { title: string; items: SectionItem[] }[] = [
     ],
   },
   {
-    title: 'Graphs',
+    title: 'Shaders',
+    items: [
+      {
+        label: 'Neurons',
+        value: 'Neurons',
+        icon: <MaterialCommunityIcons name="brain" size={16} color={lightTheme.colors.backgroundContrast} />,
+      },
+    ],
+  },
+  {
+    title: 'Charts',
     items: [],
   },
   {

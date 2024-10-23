@@ -4,7 +4,7 @@ export const clamp = (val: number, min: number, max: number) => {
   return Math.min(Math.max(val, min), max);
 };
 
-export const toTheNearest = (value: number, min: number, max: number): number => {
+export const snap = (value: number, min: number, max: number): number => {
   'worklet';
 
   const distanceToMin = Math.abs(value - min);
