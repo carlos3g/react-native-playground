@@ -9,6 +9,7 @@ import { GradientClock } from '@/screens/animations/gradient-clock';
 import { RainbowSpinnerScreen } from '@/screens/animations/rainbow-spinner';
 import { IndexScreen } from '@/screens/app/index-screen';
 import { ControlledBall } from '@/screens/gestures/controlled-ball';
+import { AnimatedSensor } from '@/screens/animations/animated-sensor';
 
 const { Navigator, Screen } = createNativeStackNavigator<AppStackParams>();
 
@@ -26,6 +27,7 @@ const AppNavigator: React.FC = () => (
 
     <Screen component={ControlledBall} name="ControlledBall" />
     <Screen component={Counter} name="Counter" />
+    <Screen component={AnimatedSensor} name="AnimatedSensor" />
   </Navigator>
 );
 

@@ -36,6 +36,11 @@ export const sections: { title: string; items: SectionItem[] }[] = [
         value: 'Counter',
         icon: <MaterialCommunityIcons name="counter" size={16} color={lightTheme.colors.backgroundContrast} />,
       },
+      {
+        label: 'Animated Sensor',
+        value: 'AnimatedSensor',
+        icon: <MaterialIcons name="sensors" size={16} color={lightTheme.colors.backgroundContrast} />,
+      },
     ],
   },
   {
