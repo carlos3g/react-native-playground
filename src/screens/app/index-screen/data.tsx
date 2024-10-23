@@ -1,4 +1,4 @@
-import { FontAwesome, Fontisto, MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
+import { FontAwesome, Fontisto, Ionicons, MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
 import type { SectionItem } from '@/screens/app/index-screen/section';
 import { lightTheme } from '@/shared/theme/theme';
 
@@ -65,6 +65,11 @@ export const sections: { title: string; items: SectionItem[] }[] = [
         label: 'Neurons',
         value: 'Neurons',
         icon: <MaterialCommunityIcons name="brain" size={16} color={lightTheme.colors.backgroundContrast} />,
+      },
+      {
+        label: 'Mirrored Globe',
+        value: 'MirroredGlobe',
+        icon: <Ionicons name="globe" size={16} color={lightTheme.colors.backgroundContrast} />,
       },
     ],
   },

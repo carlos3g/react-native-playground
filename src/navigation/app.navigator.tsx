@@ -12,6 +12,7 @@ import { ControlledBall } from '@/screens/gestures/controlled-ball';
 import { AnimatedSensor } from '@/screens/animations/animated-sensor';
 import { ExpandableCard } from '@/screens/gestures/expandable-card';
 import { Neurons } from '@/screens/shaders/neurons';
+import { MirroredGlobe } from '@/screens/shaders/mirrored-globe';
 
 const { Navigator, Screen } = createNativeStackNavigator<AppStackParams>();
 
@@ -33,6 +34,7 @@ const AppNavigator: React.FC = () => (
     <Screen component={AnimatedSensor} name="AnimatedSensor" />
 
     <Screen component={Neurons} name="Neurons" />
+    <Screen component={MirroredGlobe} name="MirroredGlobe" />
   </Navigator>
 );
 
