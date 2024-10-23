@@ -14,6 +14,7 @@ export type AppStackParams = {
   Animated3DCard: undefined;
   ControlledBall: undefined;
   ExpandableCard: undefined;
+  Counter: undefined;
 };
 
 // Helpers

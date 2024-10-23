@@ -1,5 +1,5 @@
 import { FontAwesome, Fontisto, MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
-import type { SectionItem } from '@/screens/app/section';
+import type { SectionItem } from '@/screens/app/index-screen/section';
 import { lightTheme } from '@/shared/theme/theme';
 
 export const sections: { title: string; items: SectionItem[] }[] = [
@@ -31,6 +31,11 @@ export const sections: { title: string; items: SectionItem[] }[] = [
         value: 'Animated3DCard',
         icon: <MaterialCommunityIcons name="card" size={16} color={lightTheme.colors.backgroundContrast} />,
       },
+      {
+        label: 'Counter',
+        value: 'Counter',
+        icon: <MaterialCommunityIcons name="counter" size={16} color={lightTheme.colors.backgroundContrast} />,
+      },
     ],
   },
   {
@@ -47,5 +52,13 @@ export const sections: { title: string; items: SectionItem[] }[] = [
         icon: <FontAwesome name="expand" size={16} color={lightTheme.colors.backgroundContrast} />,
       },
     ],
+  },
+  {
+    title: 'Graphs',
+    items: [],
+  },
+  {
+    title: 'Micro interactions',
+    items: [],
   },
 ];

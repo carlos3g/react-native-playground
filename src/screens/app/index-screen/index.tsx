@@ -1,8 +1,8 @@
 import { ScrollView, StyleSheet } from 'react-native';
 import type { AppStackScreenProps } from '@/navigation/app.navigator.types';
-import { sections } from '@/screens/app/data';
-import { Header } from '@/screens/app/header';
-import { Section } from '@/screens/app/section';
+import { sections } from '@/screens/app/index-screen/data';
+import { Header } from '@/screens/app/index-screen/header';
+import { Section } from '@/screens/app/index-screen/section';
 import { lightTheme } from '@/shared/theme/theme';
 
 interface IndexScreenProps extends AppStackScreenProps<'IndexScreen'> {}
@@ -21,7 +21,7 @@ export const IndexScreen: React.FC<IndexScreenProps> = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexGrow: 1,
     gap: 8,
     backgroundColor: lightTheme.colors.gray5,
   },

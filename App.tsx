@@ -25,10 +25,10 @@ import {
 import { QueryClientProvider } from '@tanstack/react-query';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
+import { SystemBars } from 'react-native-edge-to-edge';
 import { Host } from 'react-native-portalize';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Toaster } from 'sonner-native';
-import { StatusBar } from 'expo-status-bar';
 import { RootNavigator } from '@/navigation';
 import { queryClient } from '@/lib/react-query';
 
@@ -70,7 +70,7 @@ const App = gestureHandlerRootHOC(() => {
     <QueryClientProvider client={queryClient}>
       <SafeAreaProvider>
         <Host>
-          <StatusBar style="dark" />
+          <SystemBars style="dark" />
           <RootNavigator />
         </Host>
         <Toaster />
