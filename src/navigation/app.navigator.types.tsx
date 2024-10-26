@@ -19,6 +19,7 @@ export type AppStackParams = {
   Neurons: undefined;
   MirroredGlobe: undefined;
   BareRecording: undefined;
+  D3LineChart: undefined;
 };
 
 // Helpers

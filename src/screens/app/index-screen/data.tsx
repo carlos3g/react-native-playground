@@ -75,7 +75,13 @@ export const sections: { title: string; items: SectionItem[] }[] = [
   },
   {
     title: 'Charts',
-    items: [],
+    items: [
+      {
+        label: 'Basic Chart With D3',
+        value: 'D3LineChart',
+        icon: <Ionicons name="bar-chart" size={16} color={lightTheme.colors.backgroundContrast} />,
+      },
+    ],
   },
   {
     title: 'Micro interactions',

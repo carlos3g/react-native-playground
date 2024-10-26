@@ -2,18 +2,19 @@ import type { NativeStackNavigationOptions } from '@react-navigation/native-stac
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import type { AppStackParams } from '@/navigation/app.navigator.types';
 import { Animated3DCard } from '@/screens/animations/animated-3d-card';
+import { AnimatedSensor } from '@/screens/animations/animated-sensor';
 import { BlurCardsScreen } from '@/screens/animations/blur-cards';
 import { ChasingBubblesScreen } from '@/screens/animations/chasing-bubbles';
 import { Counter } from '@/screens/animations/counter';
 import { GradientClock } from '@/screens/animations/gradient-clock';
 import { RainbowSpinnerScreen } from '@/screens/animations/rainbow-spinner';
 import { IndexScreen } from '@/screens/app/index-screen';
-import { ControlledBall } from '@/screens/gestures/controlled-ball';
-import { AnimatedSensor } from '@/screens/animations/animated-sensor';
-import { ExpandableCard } from '@/screens/gestures/expandable-card';
-import { Neurons } from '@/screens/shaders/neurons';
-import { MirroredGlobe } from '@/screens/shaders/mirrored-globe';
 import { BareRecording } from '@/screens/camera/bare-recording';
+import { D3LineChart } from '@/screens/charts/d3-line-chart';
+import { ControlledBall } from '@/screens/gestures/controlled-ball';
+import { ExpandableCard } from '@/screens/gestures/expandable-card';
+import { MirroredGlobe } from '@/screens/shaders/mirrored-globe';
+import { Neurons } from '@/screens/shaders/neurons';
 
 const { Navigator, Screen } = createNativeStackNavigator<AppStackParams>();
 
@@ -36,6 +37,8 @@ const AppNavigator: React.FC = () => (
 
     <Screen component={Neurons} name="Neurons" />
     <Screen component={MirroredGlobe} name="MirroredGlobe" />
+
+    <Screen component={D3LineChart} name="D3LineChart" />
 
     <Screen component={BareRecording} name="BareRecording" />
   </Navigator>
