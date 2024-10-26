@@ -18,6 +18,7 @@ export type AppStackParams = {
   AnimatedSensor: undefined;
   Neurons: undefined;
   MirroredGlobe: undefined;
+  BareRecording: undefined;
 };
 
 // Helpers

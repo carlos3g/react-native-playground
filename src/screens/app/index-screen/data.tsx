@@ -81,4 +81,14 @@ export const sections: { title: string; items: SectionItem[] }[] = [
     title: 'Micro interactions',
     items: [],
   },
+  {
+    title: 'Camera',
+    items: [
+      {
+        label: 'Bare Recording',
+        value: 'BareRecording',
+        icon: <MaterialCommunityIcons name="record-rec" size={16} color={lightTheme.colors.backgroundContrast} />,
+      },
+    ],
+  },
 ];

@@ -25,7 +25,19 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": ["expo-font", "react-native-edge-to-edge"],
+    "plugins": [
+      "expo-font",
+      "react-native-edge-to-edge",
+      "react-native-vision-camera",
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "$(PRODUCT_NAME) needs access to your Camera.",
+          "enableMicrophonePermission": true,
+          "microphonePermissionText": "$(PRODUCT_NAME) needs access to your Microphone."
+        }
+      ]
+    ],
     "extra": {
       "eas": {
         "projectId": "83f46f3b-468b-4a14-8b3d-23183ff9768f"
