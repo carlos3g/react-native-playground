@@ -20,6 +20,7 @@ export type AppStackParams = {
   MirroredGlobe: undefined;
   BareRecording: undefined;
   D3LineChart: undefined;
+  FadeCarouselTransition: undefined;
 };
 
 // Helpers

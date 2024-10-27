@@ -41,6 +41,13 @@ export const sections: { title: string; items: SectionItem[] }[] = [
         value: 'AnimatedSensor',
         icon: <MaterialIcons name="sensors" size={16} color={lightTheme.colors.backgroundContrast} />,
       },
+      {
+        label: 'Fade Carousel Transition',
+        value: 'FadeCarouselTransition',
+        icon: (
+          <MaterialCommunityIcons name="view-carousel-outline" size={16} color={lightTheme.colors.backgroundContrast} />
+        ),
+      },
     ],
   },
   {
