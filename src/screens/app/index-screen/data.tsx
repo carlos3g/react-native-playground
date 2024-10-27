@@ -53,6 +53,11 @@ export const sections: { title: string; items: SectionItem[] }[] = [
         value: 'FloatingHearts',
         icon: <MaterialCommunityIcons name="heart" size={16} color={lightTheme.colors.backgroundContrast} />,
       },
+      {
+        label: 'Wave Animation',
+        value: 'WaveAnimation',
+        icon: <MaterialCommunityIcons name="waves" size={16} color={lightTheme.colors.backgroundContrast} />,
+      },
     ],
   },
   {

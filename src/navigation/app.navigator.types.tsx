@@ -22,6 +22,7 @@ export type AppStackParams = {
   D3LineChart: undefined;
   FadeCarouselTransition: undefined;
   FloatingHearts: undefined;
+  WaveAnimation: undefined;
 };
 
 // Helpers
