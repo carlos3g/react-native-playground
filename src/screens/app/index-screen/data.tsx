@@ -117,6 +117,11 @@ export const sections: { title: string; items: SectionItem[] }[] = [
         value: 'InvertColors',
         icon: <Ionicons name="invert-mode" size={16} color={lightTheme.colors.backgroundContrast} />,
       },
+      {
+        label: 'Face Detector',
+        value: 'FaceDetector',
+        icon: <MaterialCommunityIcons name="face-man" size={16} color={lightTheme.colors.backgroundContrast} />,
+      },
     ],
   },
 ];
