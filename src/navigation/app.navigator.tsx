@@ -16,6 +16,7 @@ import { ExpandableCard } from '@/screens/gestures/expandable-card';
 import { MirroredGlobe } from '@/screens/shaders/mirrored-globe';
 import { Neurons } from '@/screens/shaders/neurons';
 import { FadeCarouselTransition } from '@/screens/animations/fade-carousel-transition';
+import { FloatingHearts } from '@/screens/animations/floating-hearts';
 
 const { Navigator, Screen } = createNativeStackNavigator<AppStackParams>();
 
@@ -31,6 +32,7 @@ const AppNavigator: React.FC = () => (
     <Screen component={ChasingBubblesScreen} name="ChasingBubblesScreen" />
     <Screen component={Animated3DCard} name="Animated3DCard" />
     <Screen component={FadeCarouselTransition} name="FadeCarouselTransition" />
+    <Screen component={FloatingHearts} name="FloatingHearts" />
 
     <Screen component={ControlledBall} name="ControlledBall" />
     <Screen component={ExpandableCard} name="ExpandableCard" />

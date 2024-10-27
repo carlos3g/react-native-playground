@@ -48,6 +48,11 @@ export const sections: { title: string; items: SectionItem[] }[] = [
           <MaterialCommunityIcons name="view-carousel-outline" size={16} color={lightTheme.colors.backgroundContrast} />
         ),
       },
+      {
+        label: 'Floating Hearts',
+        value: 'FloatingHearts',
+        icon: <MaterialCommunityIcons name="heart" size={16} color={lightTheme.colors.backgroundContrast} />,
+      },
     ],
   },
   {
