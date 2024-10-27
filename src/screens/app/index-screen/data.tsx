@@ -112,6 +112,11 @@ export const sections: { title: string; items: SectionItem[] }[] = [
         value: 'BareRecording',
         icon: <MaterialCommunityIcons name="record-rec" size={16} color={lightTheme.colors.backgroundContrast} />,
       },
+      {
+        label: 'Invert Colors',
+        value: 'InvertColors',
+        icon: <Ionicons name="invert-mode" size={16} color={lightTheme.colors.backgroundContrast} />,
+      },
     ],
   },
 ];

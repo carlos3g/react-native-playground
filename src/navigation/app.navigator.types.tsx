@@ -23,6 +23,7 @@ export type AppStackParams = {
   FadeCarouselTransition: undefined;
   FloatingHearts: undefined;
   WaveAnimation: undefined;
+  InvertColors: undefined;
 };
 
 // Helpers
