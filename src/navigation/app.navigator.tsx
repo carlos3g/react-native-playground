@@ -19,6 +19,7 @@ import { FadeCarouselTransition } from '@/screens/animations/fade-carousel-trans
 import { FloatingHearts } from '@/screens/animations/floating-hearts';
 import { WaveAnimation } from '@/screens/animations/wave-animation';
 import { InvertColors } from '@/screens/camera/invert-colors';
+import { LikeButton } from '@/screens/micro-interactions/like-button';
 
 const { Navigator, Screen } = createNativeStackNavigator<AppStackParams>();
 
@@ -45,6 +46,8 @@ const AppNavigator: React.FC = () => (
 
     <Screen component={Neurons} name="Neurons" />
     <Screen component={MirroredGlobe} name="MirroredGlobe" />
+
+    <Screen component={LikeButton} name="LikeButton" />
 
     <Screen component={D3LineChart} name="D3LineChart" />
 

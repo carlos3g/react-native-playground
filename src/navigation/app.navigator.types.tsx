@@ -24,6 +24,7 @@ export type AppStackParams = {
   FloatingHearts: undefined;
   WaveAnimation: undefined;
   InvertColors: undefined;
+  LikeButton: undefined;
 };
 
 // Helpers

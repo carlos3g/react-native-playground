@@ -102,7 +102,13 @@ export const sections: { title: string; items: SectionItem[] }[] = [
   },
   {
     title: 'Micro interactions',
-    items: [],
+    items: [
+      {
+        label: 'Like Button',
+        value: 'LikeButton',
+        icon: <Ionicons name="heart" size={16} color={lightTheme.colors.backgroundContrast} />,
+      },
+    ],
   },
   {
     title: 'Camera',
@@ -116,11 +122,6 @@ export const sections: { title: string; items: SectionItem[] }[] = [
         label: 'Invert Colors',
         value: 'InvertColors',
         icon: <Ionicons name="invert-mode" size={16} color={lightTheme.colors.backgroundContrast} />,
-      },
-      {
-        label: 'Face Detector',
-        value: 'FaceDetector',
-        icon: <MaterialCommunityIcons name="face-man" size={16} color={lightTheme.colors.backgroundContrast} />,
       },
     ],
   },
