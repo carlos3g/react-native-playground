@@ -25,6 +25,7 @@ export type AppStackParams = {
   WaveAnimation: undefined;
   InvertColors: undefined;
   LikeButton: undefined;
+  FloatingLabelInput: undefined;
 };
 
 // Helpers

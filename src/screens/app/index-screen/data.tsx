@@ -108,6 +108,11 @@ export const sections: { title: string; items: SectionItem[] }[] = [
         value: 'LikeButton',
         icon: <Ionicons name="heart" size={16} color={lightTheme.colors.backgroundContrast} />,
       },
+      {
+        label: 'Floating Label Input',
+        value: 'FloatingLabelInput',
+        icon: <MaterialIcons name="input" size={16} color={lightTheme.colors.backgroundContrast} />,
+      },
     ],
   },
   {

@@ -20,6 +20,7 @@ import { FloatingHearts } from '@/screens/animations/floating-hearts';
 import { WaveAnimation } from '@/screens/animations/wave-animation';
 import { InvertColors } from '@/screens/camera/invert-colors';
 import { LikeButton } from '@/screens/micro-interactions/like-button';
+import { FloatingLabelInput } from '@/screens/micro-interactions/floating-label-input';
 
 const { Navigator, Screen } = createNativeStackNavigator<AppStackParams>();
 
@@ -48,6 +49,7 @@ const AppNavigator: React.FC = () => (
     <Screen component={MirroredGlobe} name="MirroredGlobe" />
 
     <Screen component={LikeButton} name="LikeButton" />
+    <Screen component={FloatingLabelInput} name="FloatingLabelInput" />
 
     <Screen component={D3LineChart} name="D3LineChart" />
 
